@@ -1,6 +1,6 @@
 {
   "name": "@brixtol/currency-symbol-placements",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "description": "Mappings for Currency Symbol placements using currency.js patterns",
   "author": "Nίκος Σαβίδης <nicos@brixtoltextiles.com>",
   "license": "MIT",
