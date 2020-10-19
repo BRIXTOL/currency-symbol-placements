@@ -1,13 +1,17 @@
 # Changelog
 
-### 0.1.1 > 0.1.2
+### 0.1.1
 
-##### 09/09/2020
+##### 19/10/2020
 
-- Various publishment adaptations for multiple registry supports
+- Changed EUR `€100`
+- Changed AFN `؋100`
+- Changed ALL `100 L`
+- Changed AMD `100֏`
+- Changed AUD `$100`
 
 ### 0.1.0
 
-##### 09/09/2020
+##### 18/10/2020
 
 - Initial Release

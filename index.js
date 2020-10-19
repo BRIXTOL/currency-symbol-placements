@@ -1,12 +1,12 @@
 export default code => ({
   AED: '# !', // 100 د.إ
-  AFN: '!#',
-  ALL: '!#',
-  AMD: '!#',
+  AFN: '#!',  // ؋100
+  ALL: '# !', // 100 L
+  AMD: '#!',  // 100֏
   ANG: '!#',
   AOA: '!#',
   ARS: '!#',
-  AUD: '! #', // $ 100.00
+  AUD: '!#', // $100.00
   AWG: '!#',
   AZN: '!#',
   BAM: '!#',
@@ -46,7 +46,7 @@ export default code => ({
   ERN: '!#',
   ETB: '!#',
   ETH: '!#',
-  EUR: '! #', // € 100
+  EUR: '!#', // € 100
   FJD: '!#',
   FKP: '!#',
   GBP: '!#',
@@ -74,7 +74,7 @@ export default code => ({
   JEP: '!#',
   JMD: '!#',
   JOD: '!#',
-  JPY: '! #',
+  JPY: '!#',
   KES: '!#',
   KGS: '!#',
   KHR: '!#',
@@ -150,14 +150,14 @@ export default code => ({
   TND: '!#',
   TOP: '!#',
   TRL: '!#',
-  TRY: '# !', // 100 ₺
+  TRY: '# !',  // 100 ₺
   TTD: '!#',
   TVD: '!#',
-  TWD: '! #', // 元 100
+  TWD: '! #',  // 元 100
   TZS: '!#',
   UAH: '!#',
   UGX: '!#',
-  USD: '!#',
+  USD: '!#',  //$100
   UYU: '!#',
   UZS: '!#',
   VEF: '!#',
