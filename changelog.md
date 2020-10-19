@@ -1,6 +1,6 @@
 # Changelog
 
-### 0.1.1
+### 0.1.1 > 0.1.2
 
 ##### 19/10/2020
 
@@ -9,6 +9,7 @@
 - Changed ALL `100 L`
 - Changed AMD `100֏`
 - Changed AUD `$100`
+- Update readme.md
 
 ### 0.1.0
 

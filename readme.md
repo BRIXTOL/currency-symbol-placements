@@ -2,11 +2,11 @@
 
 Currency Symbol placements for [currency.js](https://github.com/scurker/currency.js). Mappings use ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217#Active_codes)) 3 letter currency codes and return the format pattern (`!#`) used by _currency.js_ where `!` is the currency symbol and `#` the amount.
 
-This package is used by the [Brixtol Textiles](https://www.brixtoltextiles.com) internal API when dealing with currency conversion and presentation locales pertaining to i18n logics.
+This package is used by the [Brixtol Textiles](https://www.brixtoltextiles.com) internal API when dealing with currency conversion and presentation locales pertaining to i18n logics and has been open sourced from our [pnpm](https://pnpm.js.org/en/cli/install) monorepo workspace.
 
 ### Why?
 
-We found ourselces having to adjust currency placements which the vast majority of U.S SaaS services were constantly getting it wrong, ie: prepending the symbol, not appending.
+We found the the vast majority of U.S commerce SaaS services were constantly getting currency symbol placements wrong. We use [currency.js](https://github.com/scurker/currency.js) to convert currencies in our [mithril.js](https://mithril.js.org/) applications and this package provides us with a wrapper for this.
 
 ### Install
 
@@ -66,6 +66,8 @@ Country code to currency code mappings:
 ### Contributing
 
 Contributions are welcome! Currency symbol placements are a real mixed bag and generally do not adhere to official specifications on the matter. If the mapping placements are not accurate, please submit a PR with some foundations.
+
+> See the `package.json` for scripts and make sure you are using pnpm, because pnpm is dope and does dope shit.
 
 ### License
 
