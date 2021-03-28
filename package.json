@@ -27,9 +27,7 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c --environment prod",
-    "package": "cd versions; pnpm pack ../ && cd ..",
-    "test": "ava --watch --verbose",
-    "postpublish": "npm publish --ignore-scripts --@OWNER:registry='https://registry.npmjs.org'"
+    "test": "ava --watch --verbose"
   },
   "ava": {
     "require": [
