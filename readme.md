@@ -6,7 +6,7 @@ This package is used by the [Brixtol Textiles](https://www.brixtoltextiles.com) 
 
 ### Why?
 
-We found the the vast majority of U.S commerce SaaS services were constantly getting currency symbol placements wrong. We use [currency.js](https://github.com/scurker/currency.js) to convert currencies in our [mithril.js](https://mithril.js.org/) applications and this package provides us with a wrapper for this.
+We found the the vast majority of U.S commerce SaaS services were constantly getting currency symbol placements wrong. We use [currency.js](https://github.com/scurker/currency.js) to convert currencies in our [mithril.js](https://mithril.js.org/) applications and this package provides us with a wrapper for getting placements correct.
 
 ### Install
 
@@ -34,13 +34,13 @@ Pass in a currency code that is lowercase, uppercase or a mixture of both and th
 
 ```javascript
 import currency from "currency.js";
-import symbol from "@brixtol/currency-symbols-placements";
+import { getCurrencyPlacement } from "@brixtol/currency-symbols-placements";
 
 // Currency code SEK (Swedish Krona) - Kr
-const SEK = symbol("SEK"); // # !
+const SEK = getCurrencyPlacement("SEK"); // # !
 
 // Currency code EUR (Euros) - €
-const EUR = symbol("eur"); // !#
+const EUR = getCurrencyPlacement("eur"); // !#
 
 // Using with currency.js
 currency("510.00", {

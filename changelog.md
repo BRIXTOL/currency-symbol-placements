@@ -1,5 +1,13 @@
 # Changelog
 
+### 1.0.0
+
+##### 22/08/2021
+
+- Use named export, no longer supports default export
+- Converted Project to TypeScript
+- Added couple of tests
+
 ### 0.1.1 > 0.1.2
 
 ##### 19/10/2020
