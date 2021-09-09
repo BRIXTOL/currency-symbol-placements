@@ -376,4 +376,4 @@ const Codes: IPlacements = {
  *
  * _Accepts either uppercase or lowercase_
  */
-export const getCurrencyPlacement = (code: keyof IPlacements) => Codes[code.toUpperCase()];
+export const getCurrencyPlacement = (code: keyof IPlacements | string) => Codes[code.toUpperCase()];

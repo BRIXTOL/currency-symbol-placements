@@ -1,11 +1,11 @@
 {
   "name": "@brixtol/currency-symbol-placements",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Mappings for Currency Symbol placements using currency.js patterns",
   "author": {
     "name": "Νίκος Σαβίδης ",
     "email": "n@brixtol.com",
-    "url": "https://brixtoltextiles.com"
+    "url": "https://github.com/brixtol/currency-symbol-placements"
   },
   "license": "MIT",
   "main": "./package/index.js",
@@ -46,15 +46,10 @@
     "concurrency": 5
   },
   "devDependencies": {
-    "@brixtol/rollup-utils": "workspace:^0.2.0",
+    "@brixtol/rollup-config": "workspace:^1.2.0",
     "@brixtol/tsconfig": "workspace:^1.0.0",
-    "@rollup/plugin-commonjs": "^17.1.0",
     "currency.js": "^2.0.4",
     "esm": "^3.2.25",
-    "rollup": "^2.56.2",
-    "rollup-plugin-filesize": "^9.1.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.3.5"
   }
 }
