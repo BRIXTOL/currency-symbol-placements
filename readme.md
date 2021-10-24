@@ -1,4 +1,4 @@
-## @brixtol/currency-symbol-placements
+## @brixtol/currency-placements
 
 Currency Symbol placements for [currency.js](https://github.com/scurker/currency.js). Mappings use ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217#Active_codes)) 3 letter currency codes and return the format pattern (`!#`) used by _currency.js_ where `!` is the currency symbol and `#` the amount.
 
@@ -33,21 +33,21 @@ yarn add @brixtol/currency-symbol-placements
 Pass in a currency code that is lowercase, uppercase or a mixture of both and the pattern replacement string is returned.
 
 ```javascript
-import currency from "currency.js";
-import { getCurrencyPlacement } from "@brixtol/currency-symbols-placements";
+import currency from 'currency.js';
+import { getPlacement } from '@brixtol/currency-symbols-placements';
 
 // Currency code SEK (Swedish Krona) - Kr
-const SEK = getCurrencyPlacement("SEK"); // # !
+const SEK = getPlacement('SEK'); // # !
 
 // Currency code EUR (Euros) - €
-const EUR = getCurrencyPlacement("eur"); // !#
+const EUR = getPlacement('eur'); // !#
 
 // Using with currency.js
-currency("510.00", {
-  separator: ".",
-  decimal: ",",
+currency('510.00', {
+  separator: '.',
+  decimal: ',',
   fromCents: true,
-  pattern: SEK, // returning "# !" > "510.00 kr"
+  pattern: SEK // returning "# !" > "510.00 kr"
 }).format();
 
 // ....

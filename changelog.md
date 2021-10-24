@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.2.0 - 21/10/2021
+
+- Changed Module name from `currency-symbol-placements` to `currency-placements`
+- Changed method `getCurrencySymbols` to `getSymbols`
+- Updated rollup-config
+
 ### 1.1.0
 
 Replaced development rollup dependencies to use [@brixtol/rollup-config](https://github.com/BRIXTOL/rollup-config)
