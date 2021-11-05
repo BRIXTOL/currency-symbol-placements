@@ -1,6 +1,6 @@
 {
   "name": "@brixtol/currency-symbol-placements",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Mappings for Currency Symbol placements using currency.js patterns",
   "author": {
     "name": "Νίκος Σαβίδης ",
@@ -34,7 +34,8 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c --environment prod",
-    "test": "ava --watch --verbose"
+    "test": "ava --watch --verbose",
+    "test:build": "ava --verbose"
   },
   "ava": {
     "require": [

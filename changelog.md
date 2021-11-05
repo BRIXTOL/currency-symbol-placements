@@ -1,9 +1,15 @@
 # Changelog
 
+### 1.2.1 - 05/11/2021
+
+Improved type support and provided error handling for when invalid or incorrect ISO codes are provided.
+
+- Added type support for symbol reference
+- Added literal union support for argument `code`
+
 ### 1.2.0 - 21/10/2021
 
-- Changed Module name from `currency-symbol-placements` to `currency-placements`
-- Changed method `getCurrencySymbols` to `getSymbols`
+- Changed method `getCurrencyPlacement` to `getPlacement`
 - Updated rollup-config
 
 ### 1.1.0
