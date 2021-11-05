@@ -1,6 +1,16 @@
 import test from 'ava';
-import { getCurrencyPlacement } from '../package/index';
+import { getPlacement } from '../package/index';
 import currency from 'currency.js';
+
+test('Currency code is invalid', (t) => {
+
+  t.throws(() => getPlacement('SSS'), {
+    message: '"SSS" is an invalid currency code'
+  });
+
+  t.pass();
+
+});
 
 test('Currency placement in SEK', (t) => {
 
@@ -10,7 +20,7 @@ test('Currency placement in SEK', (t) => {
     decimal: '.',
     fromCents: false,
     symbol: 'kr',
-    pattern: getCurrencyPlacement('SEK')
+    pattern: getPlacement('SEK')
   }).format();
 
   t.is(format, '510.00 kr');
@@ -27,7 +37,7 @@ test('Currency placement EUR with lowercase code', (t) => {
     decimal: '.',
     fromCents: false,
     symbol: '€',
-    pattern: getCurrencyPlacement('eur')
+    pattern: getPlacement('eur')
   }).format();
 
   t.is(format, '€510.00');
