@@ -17,7 +17,7 @@ declare type Placement = (
   '# !'
 )
 
-export interface IPlacements {
+interface IPlacements {
   AED: Placement, // 100 د.إ
   AFN: Placement, // ؋100
   ALL: Placement, // 100 L
@@ -194,7 +194,31 @@ export interface IPlacements {
   ZWD: Placement,
 }
 
-const Codes: IPlacements = {
+/**
+ * Literal Union Helper
+ *
+ * Allows string types to be passed while respecting
+ * intellisense completions.
+ */
+type Union<T, B extends | null | undefined | string | symbol> = T | (B & {_?: never})
+
+/**
+ * Object Values
+ *
+ * Creates a union of currency code values used as a return
+ * type in function export.
+ */
+type Values<T, V extends keyof T = keyof T> = T[V];
+
+/**
+ * Currency Placement
+ *
+ * Extracts the placement string from the IPLacements interface
+ * which is use as the Return type reference
+ */
+type CurrencyPlacement<ISO extends keyof IPlacements> = Values<IPlacements, ISO>
+
+const Placements: IPlacements = Object.freeze({
   AED: '# !', // 100 د.إ
   AFN: '#!', // ؋100
   ALL: '# !', // 100 L
@@ -369,13 +393,28 @@ const Codes: IPlacements = {
   ZAR: '!#',
   ZMW: '!#',
   ZWD: '!#'
-};
+});
 
 /**
- * 3 Letter currency code
+ * Get Currency Symbol placement
  *
- * _Accepts either uppercase or lowercase_
+ * Requires a 3 Letter (ISO) currency code to be passed
+ * and returns the currency symbol placement. The placement
+ * uses the `#` character to infer a number and `!` the symbol.
+ *
+ * > _Accepts either uppercase, lowercase or
+ * or a combination of either_
  */
-export const getPlacement = (
-  code: keyof IPlacements | string
-) => Codes[code.toUpperCase()];
+function getPlacement <ISO extends keyof IPlacements> (
+  code: Union<ISO, string>
+): CurrencyPlacement<ISO> {
+
+  const placement = Placements[code.toUpperCase()];
+
+  if (!placement) throw new Error(`"${code}" is an invalid currency code`);
+
+  return placement;
+
+}
+
+export { IPlacements, Placements, getPlacement };
