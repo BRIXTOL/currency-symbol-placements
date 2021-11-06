@@ -52,5 +52,9 @@
     "currency.js": "^2.0.4",
     "esm": "^3.2.25",
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@brixtol/currency-codes": "workspace:^1.2.1",
+    "@brixtol/tsutils": "workspace:^1.0.0"
   }
 }
