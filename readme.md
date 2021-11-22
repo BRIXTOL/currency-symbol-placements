@@ -55,6 +55,10 @@ currency('510.00', {
 
 ### Related
 
+Static GeoIP utility
+
+- [@brixtol/i18n](https://github.com/brixtol/i18n)
+
 Locale related mappings helpers:
 
 - [@brixtol/currency-symbols](https://github.com/brixtol/currency-symbols)
@@ -65,13 +69,11 @@ Country code to currency code mappings:
 
 ### Contributing
 
-Contributions are welcome! Currency symbol placements are a real mixed bag and generally do not adhere to official specifications on the matter. If the mapping placements are not accurate, please submit a PR with some foundations.
-
-> See the `package.json` for scripts and make sure you are using pnpm, because pnpm is dope and does dope shit.
+Contributions are welcome! Currency symbol placements are a real mixed bag and generally do not adhere to official specifications so-to-speak. If the mapping placements are not accurate, please submit a PR with some foundations.
 
 ### License
 
-Licensed under [MIT](#LICENCE)
+Licensed under [MIT](#LICENSE)
 
 ---
 
