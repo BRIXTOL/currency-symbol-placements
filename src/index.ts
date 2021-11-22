@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 import { LiteralUnion, AnyCase } from '@brixtol/tsutils';
 import { CurrencyCodes } from '@brixtol/currency-codes';
 
